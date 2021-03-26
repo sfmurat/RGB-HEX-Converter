@@ -48,6 +48,9 @@
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Convert"/>
+                                <connections>
+                                    <action selector="btnConvertClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZR1-s2-fTC"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Selected:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hOb-Uq-vx5">
                                 <rect key="frame" x="44" y="531" width="327" height="21"/>
@@ -63,18 +66,18 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="AXN-n5-Wfn">
-                                <rect key="frame" x="68" y="65" width="278" height="32"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <segments>
-                                    <segment title="RGB - HEX"/>
-                                    <segment title="HEX - RGB"/>
-                                </segments>
-                            </segmentedControl>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <connections>
+                        <outlet property="btnConvert" destination="CMY-dK-SVa" id="EGU-Qh-OYc"/>
+                        <outlet property="lblResult" destination="rj9-Wh-7fP" id="OkH-af-hxy"/>
+                        <outlet property="lblSelected" destination="pgD-bh-LTh" id="TRS-hG-LS1"/>
+                        <outlet property="txtBlue" destination="amh-MS-w70" id="E1Z-ue-KUV"/>
+                        <outlet property="txtGreen" destination="Ylz-rK-lmT" id="ARJ-VO-XHh"/>
+                        <outlet property="txtRed" destination="0Qs-Lh-Eg3" id="6Mp-27-uJx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
